@@ -31,26 +31,26 @@ export const projects = [
       "An AI-powered sentiment analysis tool that processes text data from various sources. Features include real-time analysis, data visualization, and API integration.",
     image: "/placeholder.svg?height=300&width=600",
     tags: ["Python", "Django", "React"],
-    github: "#",
+    github: "https://github.com/shihab-newaz/TechVibe",
     demo: "#",
   },
 
   {
     title: "Java Music",
     description:
-      "A music streaming platform built with Java backend and React frontend. Features include user authentication, playlist management, and real-time streaming.",
+      "Java Music is a JavaFX-based application that allows users to manage and play music, discover trending songs, and download tracks using the Shazam API.",
     image: "/placeholder.svg?height=300&width=600",
     tags: ["Java", "SQLite", "JavaFX"],
-    github: "#",
+    github: "https://github.com/shihab-newaz/Java-Music",
     demo: "#",
   },
   {
     title: "AudioTemple",
     description:
-      "A marketplace for audio samples and music production tools. Includes payment processing, user profiles, and audio previewing capabilities.",
+      "A spotify-like website using PHP and MySQL for back-end and HTML,CSS & vanilla-JavaScript for front-end",
     image: "/placeholder.svg?height=300&width=600",
     tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-    github: "#",
+    github: "https://github.com/shihab-newaz/AudioTemple",
     demo: "#",
   },
 ];
