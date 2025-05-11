@@ -42,7 +42,12 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
-              <Button className="gap-1 relative overflow-hidden group">
+              <Button 
+                className="gap-1 relative overflow-hidden group"
+                onClick={() => {
+                  window.open('/Shihab_Newaz.pdf', '_blank')
+                }}
+              >
                 <span className="relative z-10 flex items-center gap-1">
                   <Download className="h-4 w-4" />
                   Download Resume
