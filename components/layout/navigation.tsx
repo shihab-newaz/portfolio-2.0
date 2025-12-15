@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Menu, X } from "lucide-react"
 import { personalInfo } from "@/constants/personal-info"
-import { ThemeToggle } from "./ui/theme-toggle"
+import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -25,7 +25,7 @@ export function Navigation() {
 
   return (
     <motion.header
-      className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+      className="sticky top-0 z-40 w-full border-b border-neon-cyan/20 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 neon-box-glow"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
