@@ -1,2 +1,2 @@
-export * from './constants.type'
-export * from './github.type'
+export * from './constants.types'
+export * from './github.types'

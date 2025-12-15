@@ -1,5 +1,5 @@
 import { projects } from "@/constants/projects"
-import { getRepoStats } from "@/actions/github.action"
+import { getRepoStats } from "@/services/github.service"
 import { parseGitHubUrl } from "@/lib/github"
 import { ProjectCard } from "./project-card"
 import { AnimatedSection } from "@/components/shared/animated-section"

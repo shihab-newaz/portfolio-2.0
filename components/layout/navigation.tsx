@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Menu, X } from "lucide-react"
 import { personalInfo } from "@/constants/personal-info"
-import { ThemeToggle } from "@/components/ui/theme-toggle"
+import { ThemeToggle } from "@/components/shared/theme-toggle"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
