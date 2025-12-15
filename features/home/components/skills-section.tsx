@@ -72,7 +72,7 @@ export function SkillsSection() {
                           >
                             <h4 className="font-semibold">{formatCategory(category)}</h4>
                             <ul className="space-y-1 text-sm text-muted-foreground">
-                              {skillList.map((skill, skillIndex) => (
+                              {(skillList as string[]).map((skill, skillIndex) => (
                                 <motion.li
                                   key={skillIndex}
                                   initial={{ opacity: 0, x: -10 }}

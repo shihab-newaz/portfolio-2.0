@@ -25,7 +25,7 @@ export const projects: Project[] = [
       "A minimalist and elegant website for a luxury golf club, built with modern web technologies.",
     image: "/daeho-cc.png?height=500&width=600",
     tags: ["Next.js", "MongoDB", "NexAuth", "TypeScript", "Framer Motion"],
-    github: "https://github.com/shihab-newaz/daeho-cc",
+    github: "https://github.com/shihab-newaz/Golf-Club",
     demo: "https://daehocc.com",
   },
 
