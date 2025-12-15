@@ -1,4 +1,6 @@
-export const skills = {
+import type { Skills } from "@/types"
+
+export const skills: Skills = {
   frontend: {
     core: [
       "HTML5 / CSS3",

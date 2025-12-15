@@ -1,4 +1,6 @@
-export const personalInfo = {
+import type { PersonalInfo } from "@/types"
+
+export const personalInfo: PersonalInfo = {
   name: "Shihab Newaz",
   title: "Associate Software Engineer",
   email: "shihab.newaz.563@gmail.com",
