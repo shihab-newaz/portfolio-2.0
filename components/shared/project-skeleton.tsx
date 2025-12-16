@@ -1,9 +1,8 @@
 "use client"
-import { motion } from "motion/react";
-
+import { motion } from "framer-motion"
 export function ProjectsSkeleton() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+    <motion.section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
       <div className="container px-4 md:px-6">
         <motion.div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="h-10 w-64 bg-muted animate-pulse rounded" />
@@ -15,6 +14,6 @@ export function ProjectsSkeleton() {
           ))}
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }
