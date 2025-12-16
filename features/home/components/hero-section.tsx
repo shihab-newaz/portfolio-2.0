@@ -2,10 +2,11 @@
 
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
 import { personalInfo } from "@/constants/personal-info"
 import { motion } from "framer-motion"
+import { ASSETS } from "@/public"
+import Link from "next/link"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
@@ -42,10 +43,15 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
-              <Button 
+              <Button
                 className="gap-1 relative overflow-hidden group"
                 onClick={() => {
-                  window.open('/Shihab_Newaz.pdf', '_blank')
+                  const link = document.createElement('a')
+                  link.href = ASSETS.RESUME
+                  link.download = 'Shihab_Newaz_Resume.pdf'
+                  document.body.appendChild(link)
+                  link.click()
+                  document.body.removeChild(link)
                 }}
               >
                 <span className="relative z-10 flex items-center gap-1">
@@ -80,7 +86,7 @@ export function HeroSection() {
             className="relative"
           >
             <Image
-              src="/profile-image.jpg"
+              src={ASSETS.PROFILE_IMAGE}
               width={500}
               height={500}
               alt={personalInfo.name}

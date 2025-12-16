@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Github, Linkedin, Mail, Send } from "lucide-react"
-import Link from "next/link"
 import { personalInfo } from "@/constants/personal-info"
 import { AnimatedSection } from "@/components/shared/animated-section"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export function ContactSection() {
   return (

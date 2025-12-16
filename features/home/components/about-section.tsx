@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { personalInfo } from "@/constants/personal-info"
 import { education } from "@/constants/education"
-
+import { ASSETS } from "@/public"
 export function AboutSection() {
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32">
@@ -18,7 +18,7 @@ export function AboutSection() {
         </div>
         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
           <Image
-            src="/kuet.jpg"
+            src={ASSETS.KUET}
             width={400}
             height={400}
             alt="About Shihab"

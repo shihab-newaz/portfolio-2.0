@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import type { Project, RepoStats } from "@/types"
+import { ASSETS } from "@/public"
 
 interface ProjectCardProps {
     project: Project
@@ -28,23 +29,21 @@ function formatRelativeTime(dateString: string): string {
 export function ProjectCard({ project, stats }: ProjectCardProps) {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.3 }}
+            className="h-full"
         >
-            <Card className="overflow-hidden bg-card/50 backdrop-blur-sm h-full">
+            <Card className="overflow-hidden bg-card/50 backdrop-blur-sm h-full flex flex-col">
                 <CardHeader className="p-0">
                     <Image
-                        src={project.image || "/placeholder.svg"}
+                        src={project.image || ASSETS.PLACEHOLDER}
                         width={600}
-                        height={300}
+                        height={400}
                         alt={project.title}
-                        className="w-full object-cover h-48"
+                        className="w-full object-cover h-64"
                     />
                 </CardHeader>
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex-1">
                     <div className="flex items-center justify-between">
                         <CardTitle className="text-2xl">{project.title}</CardTitle>
                         {stats && (
